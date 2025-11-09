@@ -1,0 +1,55 @@
+/* style.css */
+
+/* Custom Variables for easy color changes */
+:root {
+    --color-accent: #FFC107; /* Yellow Accent */
+    --color-primary: #343A40; /* Dark Primary Text */
+}
+
+/* Base Styles */
+.bg-yellow-accent { 
+    background-color: var(--color-accent) !important; 
+}
+.text-dark-primary { 
+    color: var(--color-primary) !important; 
+}
+
+/* Custom Button Style */
+.btn-custom { 
+    background-color: var(--color-accent); 
+    border-color: var(--color-accent); 
+    color: var(--color-primary); 
+    font-weight: bold; 
+}
+.btn-custom:hover { 
+    background-color: #e0ac00; /* Darker Yellow on hover */
+    border-color: #e0ac00; 
+    color: var(--color-primary); 
+}
+
+/* Icon Styles */
+.icon-large { 
+    font-size: 3rem; 
+    color: var(--color-accent); 
+}
+
+/* Header/Hero Section Styles */
+.hero-section { 
+    padding: 80px 0; 
+}
+.hero-image { 
+    max-height: 400px; 
+}
+
+/* Team Members Page Specific Styles */
+.team-photo { 
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+}
+/* Hover effect for Team Card (ถ้าใช้ stretched-link) */
+.card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}

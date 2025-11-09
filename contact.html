@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact FindLocal - ติดต่อเรา</title>
+    
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-dark-primary fw-bold d-flex align-items-center" href="index.html">
+                <i class="bi bi-geo-alt-fill me-2" style="font-size:1.5rem; color:#FFC107;"></i> 
+                FindLocal
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto"> 
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Team Members</a></li> 
+                </ul>
+                
+                <a href="index.html#call-for-action" class="btn btn-custom fw-bold px-4 py-2" role="button">Start Now</a> 
+            </div>
+        </div>
+    </nav>
+    
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-lg p-4 p-md-5">
+                        <h1 class="fw-bolder text-dark-primary text-center mb-4">ติดต่อเรา</h1>
+                        <p class="text-center text-muted mb-5">
+                            เรายินดีรับฟังคำถาม ข้อเสนอแนะ หรือข้อผิดพลาดใด ๆ ที่คุณพบ กรุณากรอกแบบฟอร์มด้านล่างเพื่อติดต่อทีมงานของเรา
+                        </p>
+                        
+                        <form action="#" method="POST"> 
+                            
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label fw-bold">ชื่อ - นามสกุล</label>
+                                <input type="text" class="form-control" id="contactName" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label fw-bold">อีเมล</label>
+                                <input type="email" class="form-control" id="contactEmail" required>
+                                <div class="form-text">เราจะไม่เปิดเผยอีเมลของคุณให้ใครทราบ</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contactSubject" class="form-label fw-bold">หัวข้อการติดต่อ</label>
+                                <select class="form-select" id="contactSubject">
+                                    <option selected>เลือกหัวข้อ...</option>
+                                    <option value="feedback">ข้อเสนอแนะ</option>
+                                    <option value="bug">แจ้งปัญหา/ข้อผิดพลาด</option>
+                                    <option value="business">ติดต่อธุรกิจ/สื่อ</option>
+                                    <option value="other">อื่น ๆ</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="contactMessage" class="form-label fw-bold">ข้อความ</label>
+                                <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-custom btn-lg fw-bold">ส่งข้อความ</button>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="social-link" class="bg-dark py-4 text-white">
+        <div class="container text-center">
+            <p class="mb-3">
+                <a href="#" class="text-white mx-2"><i class="bi bi-facebook fs-4"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-instagram fs-4"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-twitter fs-4"></i></a>
+            </p>
+            <p class="mb-0">&copy; 2025 LocalFind. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap.min.js"></script>
+</body>
+</html>
